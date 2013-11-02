@@ -1,4 +1,4 @@
-C Programming - A Modern Approach - KN King
+C Programming A Modern Approach - KN King
 ==========================================
 
 Answers to exercises

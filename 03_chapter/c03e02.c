@@ -1,23 +1,21 @@
+/* Print mech number, price and date */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
-    int number, date_day, date_month, date_year;
+    unsigned int number, date_day, date_month, date_year;
     float price;
+    
     printf("Enter a number: ");
-    scanf("%d", &number);
+    scanf("%u", &number);
     printf("Enter a price: ");
     scanf("%f", &price);
     printf("Enter a date (dd/mm/yyyy): ");
-    scanf("%d/%d/%d", &date_day, &date_month, &date_year);
+    scanf("%u/%u/%u", &date_day, &date_month, &date_year);
 
-    printf("\n");
-
-    printf("Merch\tUnit\tPurchase\n\tprice\tDate\n");
-    printf("%d\t$%5.2f\t%.2d/%.2d/%.2d",number,price,date_day, date_month, date_year);
-
-    printf("\n");
+    printf("\nMerch\tUnit\tPurchase\n\tprice\tDate\n");
+    printf("%u\t$%5.2f\t%.2u/%.2u/%.4u",number,price,date_day, date_month, date_year);
 
     return 0;
 }

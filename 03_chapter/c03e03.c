@@ -1,7 +1,8 @@
+/* Print ISBN subnumbers */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     unsigned int gsi, group, code, number, check_out;
 

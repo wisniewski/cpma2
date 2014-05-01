@@ -1,10 +1,11 @@
+/* Volume of sphere */
+
 #include <stdio.h>
 
-#define FRACTION 4.0f/3.0f
-#define PI 3.14159
+const float FRACTION = 4.0f/3.0f;
+const float PI = 3.14159f;
 
-int
-main(void)
+int main(void)
 {
     float volume, radius;
     printf("Enter a radius: ");

@@ -1,9 +1,10 @@
+/* Amount of loan */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
-    float loan, interest_rate, monthly, tmp;
+    float loan, interest_rate, monthly;
     printf("Give amount of loan: ");
     scanf("%f", &loan);
     printf("Give amount of interest rate: ");
@@ -21,5 +22,6 @@ main(void)
 
     loan = (loan - monthly) + (loan * interest_rate);
     printf("After third payment: %f\n", loan);
+    
     return 0;
 }

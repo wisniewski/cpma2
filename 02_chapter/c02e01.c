@@ -1,8 +1,9 @@
+/* Print fancy pattern on screen */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
-    printf("      *\n     *\n    *\n*  *\n **\n *");
+    printf("       *\n      *\n     *\n*   *\n * *\n  *");
     return 0;
 }

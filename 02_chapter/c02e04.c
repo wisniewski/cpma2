@@ -1,9 +1,10 @@
+/* Get value and add 5% tax */
+
 #include <stdio.h>
 
-#define TAX 0.05f
+const float TAX = 0.05f;
 
-int
-main(void)
+int main(void)
 {
     float amount;
     printf("Enter a dollar amount: ");

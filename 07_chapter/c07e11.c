@@ -1,7 +1,8 @@
+/* calculate the expression */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     char operand;
     float number, sum = 0.0f;
@@ -16,13 +17,14 @@ main(void)
         scanf("%f", &number);
         switch(operand)
         {
-        case '+': sum += number; break;
-        case '-': sum -= number; break;
-        case '*': sum *= number; break;
-        case '/': sum /= number; break;
+            case '+': sum += number; break;
+            case '-': sum -= number; break;
+            case '*': sum *= number; break;
+            case '/': sum /= number; break;
         }
     }
-    printf("%f", sum);
+    
+    printf("%.2f", sum);
 
     return 0;
 }

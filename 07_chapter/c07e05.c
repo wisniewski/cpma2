@@ -1,15 +1,17 @@
+/* Print sizes of few types */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
-    printf("%d\n", (int) sizeof(int));
-    printf("%d\n", (int) sizeof(short));
-    printf("%d\n", (int) sizeof(long));
-    printf("%d\n", (int) sizeof(float));
-    printf("%d\n", (int) sizeof(double));
-    printf("%d\n", (int) sizeof(long double));
+	printf("%zu\n", sizeof(char));
+	printf("%zu\n", sizeof(int));
+	printf("%zu\n", sizeof(short));
+	printf("%zu\n", sizeof(long));
+	printf("%zu\n", sizeof(float));
+	printf("%zu\n", sizeof(double));
+	printf("%zu\n", sizeof(long double));
 
-    return 0;
+	return 0;
 }
 

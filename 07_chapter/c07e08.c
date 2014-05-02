@@ -1,7 +1,9 @@
-#include <stdio.h>
+/* Show time in 24-hour format */
 
-int
-main(void)
+#include <stdio.h>
+#include <ctype.h>
+
+int main(void)
 {
     int hour, minutes;
     char letter;
@@ -24,7 +26,6 @@ main(void)
     }
 
     printf("24-hour time: %.2d:%.2d", hour, minutes);
-
 
     return 0;
 }

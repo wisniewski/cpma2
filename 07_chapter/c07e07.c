@@ -1,7 +1,9 @@
-#include <stdio.h>
+/* Show time in 12-hour format */
 
-int
-main(void)
+#include <stdio.h>
+#include <ctype.h>
+
+int main(void)
 {
     int hour, minutes, converter;
     char letter;
@@ -36,7 +38,5 @@ main(void)
     else if((converter < 2*60) || (converter >= 19*6+52))
         printf("21:45, arriving at 23:58");
 
-
     return 0;
 }
-

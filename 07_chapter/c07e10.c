@@ -1,14 +1,14 @@
+/* Format name and surname */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     char name, surname;
     printf("Enter your name and surname: ");
     scanf(" %c", &name);
 
-    while(getchar() != ' ') //ignore spaces
-        ;
+    while(getchar() != ' '); //ignore spaces
 
     while((surname = getchar()) != '\n')
     {

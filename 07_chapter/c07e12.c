@@ -1,7 +1,8 @@
+/* Average word length in sentence */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int all_letters=0, how_many_words=0;
     char letter, last_letter = 'a';

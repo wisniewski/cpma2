@@ -1,7 +1,8 @@
+/* Calculate broker's commission */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int shares;
     float price, commission, value, percentage, base;

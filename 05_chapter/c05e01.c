@@ -1,10 +1,12 @@
+/* Finding the number of digits of an integer */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int number;
-    printf("Enter a number: ");
+    
+    printf("Enter max 3-digit number: ");
     scanf("%d", &number);
 
     if(((number < 9) && (number >= 0)) || ((number <= 0) && (number > -10)))

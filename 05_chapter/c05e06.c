@@ -1,10 +1,11 @@
+/* Check out UPC code */
+
 #include <stdio.h>
 
-int 
-main(void)
+int main(void)
 {
   int check_digit, d, i1, i2, i3, i4, i5, j1, j2, j3, j4, j5,
-      first_sum, second_sum, total;
+  first_sum, second_sum, total;
 
   printf("Enter the first (single) digit: ");
   scanf("%1d", &d);

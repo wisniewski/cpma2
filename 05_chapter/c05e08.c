@@ -1,9 +1,11 @@
+/* Choose departure */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int hour, minutes, converter;
+    
     printf("Enter a 24-hour time (xx:xx): ");
     scanf("%d:%d", &hour, &minutes);
     converter = (hour * 60) + minutes;
@@ -24,7 +26,6 @@ main(void)
         printf("19:00, arriving at 21:20");
     else if((converter < 2*60) || (converter >= 19*6+52))
         printf("21:45, arriving at 23:58");
-
 
     return 0;
 }

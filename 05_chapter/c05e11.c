@@ -1,9 +1,11 @@
+/* Print number */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int number, digit1, digit2;
+
     printf("Two-digit number (xx): ");
     scanf("%d", &number);
 
@@ -58,5 +60,6 @@ main(void)
             }
         }
     }
+    
     return 0;
 }

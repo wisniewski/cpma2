@@ -1,9 +1,10 @@
+/* Calculate tax */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
-   float income;
+    float income;
     printf("Enter amount of taxable income: ");
     scanf("%f", &income);
 

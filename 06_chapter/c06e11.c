@@ -1,9 +1,8 @@
+/* Calculate e = 1 + 1/1! + 1/2! + 1/3! + ... + 1/n! */
+
 #include <stdio.h>
 
-//e = 1 + 1/1! + 1/2! + 1/3! + ... + 1/n!
-
-int 
-main(void)
+int main(void)
 {
     int number;
     float e = 1;

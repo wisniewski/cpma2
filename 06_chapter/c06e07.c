@@ -1,7 +1,8 @@
+/* Print squares of n numbers */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int i, n, odd, square;
 

@@ -1,7 +1,8 @@
+/* Greatest common divisor */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int number1, number2;
     printf("Enter numbers: ");
@@ -15,7 +16,7 @@ main(void)
         number2 = temp;
     }
 
-    printf("NWD: %d", number1);
+    printf("Greatest common divisor: %d", number1);
 
     return 0;
 }

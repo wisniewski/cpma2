@@ -1,7 +1,8 @@
+/* Fractions and greatest common divisor */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int number1, number2, up, down;
     printf("Enter a fraction (x/y): ");

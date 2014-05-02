@@ -1,7 +1,8 @@
+/* Broker's commision with loop */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     float commission, value;
 
@@ -30,5 +31,6 @@ main(void)
         printf("Enter a value of money: ");
         scanf("%f", &value);
     }
+    
     return 0;
 }

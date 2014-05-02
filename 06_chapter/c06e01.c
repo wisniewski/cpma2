@@ -1,7 +1,8 @@
+/* Find max number */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     float number, maximum = 0;
     do

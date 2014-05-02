@@ -1,9 +1,8 @@
+/* Calculate //e = 1 + 1/1! + 1/2! + 1/3! + ... + 1/n! with limiter */
+
 #include <stdio.h>
 
-//e = 1 + 1/1! + 1/2! + 1/3! + ... + 1/n!
-
-int 
-main(void)
+int main(void)
 {
     int number;
     float e = 1.0f, current_value;
@@ -23,7 +22,6 @@ main(void)
             break;
         e += (float) 1.f / (float) 1.f / div;
         printf(" + %f", (float) 1.f / div);
-
     }
     printf("\n\ne = %.5f\n", e);
 

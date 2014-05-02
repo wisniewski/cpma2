@@ -1,7 +1,8 @@
+/* Display calendar */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int number_of_days, first_day;
 
@@ -15,10 +16,10 @@ main(void)
         printf("  ");
 
     for(int i = first_day, counter = 1; i < number_of_days+first_day; i++, counter++)
-        {
-            printf("%3d", counter);
-            if(!(i % 7))
-                printf("\n");
-        }
+    {
+        printf("%3d", counter);
+        if(!(i % 7))
+            printf("\n");
+    }
     return 0;
 }

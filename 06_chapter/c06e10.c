@@ -1,7 +1,8 @@
+/* Compare n dates */
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     unsigned int day, month, year, day_tmp, month_tmp, year_tmp;
     unsigned int minimum = 0, actual;
@@ -24,12 +25,12 @@ main(void)
 
         actual = (365 * year) + (30 * month) + day;
         if(actual < minimum)
-            {
-                minimum = actual;
-                day_tmp = day;
-                month_tmp = month;
-                year_tmp = year;
-            }
+        {
+            minimum = actual;
+            day_tmp = day;
+            month_tmp = month;
+            year_tmp = year;
+        }
     }
 
     printf("Earliest date: %u/%u/%u", day_tmp, month_tmp, year_tmp);

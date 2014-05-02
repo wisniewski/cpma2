@@ -1,10 +1,12 @@
+/* Get decimal, print octal without %.5o */
+
 #include <stdio.h>
-#include <stdint.h>
-int
-main(void)
+
+int main(void)
 {
-    uint16_t number;
-    printf("Give a five-digit number (xxxxx): ");
+    unsigned int number;
+    
+    printf("Give a number between 0 and 32767: ");
     scanf("%u", &number);
 
     printf("Octal: %u%u%u%u%u",((((number/8)/8)/8)/8)%8,(((number/8)/8)/8)%8,((number/8)/8)%8,(number/8)%8,number%8);

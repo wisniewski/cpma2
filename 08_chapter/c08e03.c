@@ -1,13 +1,15 @@
+/* Repeated digits in loop */ 
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int digit, digit_seen[10] = {0};
     long n, tmp;
 
     printf("Enter a number: ");
     scanf("%ld", &n);
+
     while(n > 0)
     {
         tmp = n;
@@ -39,4 +41,3 @@ main(void)
 
     return 0;
 }
-

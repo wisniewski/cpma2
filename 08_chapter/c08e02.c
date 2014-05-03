@@ -1,7 +1,8 @@
+/* Repeated digits */ 
+
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     int digit, digit_seen[10] = {0};
     long n;

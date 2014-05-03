@@ -1,3 +1,5 @@
+/* Interest rate */ 
+
 #include <stdio.h>
 
 #define NUM_RATES ((int) (sizeof(value) / sizeof(value[0])))
@@ -14,7 +16,7 @@ main(void)
     printf("Enter number of years: ");
     scanf("%d", &num_years);
 
-    printf("\nYears");
+    printf("\nYear");
     for (i = 0; i < NUM_RATES; i++)
     {
         printf("%6d%%", low_rate + i);
@@ -36,4 +38,3 @@ main(void)
 
     return 0;
 }
-

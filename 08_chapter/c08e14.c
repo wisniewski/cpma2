@@ -1,3 +1,5 @@
+/* Convert sentence into cypher */
+
 #include <stdio.h>
 #include <ctype.h>
 
@@ -36,4 +38,3 @@ int main(void)
 
     return 0;
 }
-

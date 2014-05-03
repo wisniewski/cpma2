@@ -1,8 +1,9 @@
+/* Repeated digits */ 
+
 #include <stdbool.h>
 #include <stdio.h>
 
-int
-main(void)
+int main(void)
 {
     bool is_repeated = false;
     int digit, digit_seen[10] = {0};
@@ -34,4 +35,3 @@ main(void)
 
     return 0;
 }
-

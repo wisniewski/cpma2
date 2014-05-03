@@ -1,3 +1,5 @@
+/* Show surname and first letter of name */
+
 #include <stdio.h>
 #include <ctype.h>
 
@@ -18,6 +20,7 @@ int main(void)
             tab[i] = surname;
         i++;
     }
+
     i=0;
     while(isalpha(tab[i]))
         printf("%c", tab[i++]);
@@ -26,4 +29,3 @@ int main(void)
 
     return 0;
 }
-

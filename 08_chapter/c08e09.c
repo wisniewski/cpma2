@@ -1,3 +1,5 @@
+/* Random moves in 10x10 matrix */
+
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
@@ -19,8 +21,7 @@ int check_dot(char t[10][10],int x,int y)
     return (x>=0 && y>=0 && x<10 && y<10) && t[x][y]=='.';
 }
 
-int
-main(void)
+int main(void)
 {
     char tab[10][10];
     unsigned int moves;
@@ -80,6 +81,6 @@ main(void)
         }
     }
     show_matrix(tab);
+
     return 0;
 }
-

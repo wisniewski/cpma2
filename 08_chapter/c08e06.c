@@ -1,10 +1,11 @@
+/* Convert sentence */
+
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
 #include <time.h>
 
-int
-main(void)
+int main(void)
 {
     srand((unsigned int) time(NULL));
     char sentence[100], letter;
@@ -34,4 +35,3 @@ main(void)
 
     return 0;
 }
-

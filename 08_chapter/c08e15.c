@@ -1,3 +1,5 @@
+/* Anagrams */
+
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
@@ -24,12 +26,12 @@ void print_word(char w[])
     printf("\n");
 }
 
-_Bool is_anagram(char w1[], char w2[])
+bool is_anagram(char w1[], char w2[])
 {
-    _Bool anagrams;
+    bool anagrams;
     int anagrams_w1[LETTERS] = {0}, anagrams_w2[LETTERS] = {0};
     int i = 0;
-     while(w1[i] != '\n')
+    while(w1[i] != '\n')
     {
         if(isalpha(w1[i]))
             anagrams_w1[w1[i] - 'a']++;
@@ -69,4 +71,3 @@ int main(void)
 
     return 0;
 }
-

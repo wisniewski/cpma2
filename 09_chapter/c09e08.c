@@ -1,3 +1,5 @@
+/* Yahtzee */ 
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -37,7 +39,7 @@ _Bool play_game(void)
 int main(void)
 {
     int win=0, lose =0;
-    char letter;
+
     srand((unsigned int) time(NULL));
 
     do
@@ -60,4 +62,3 @@ int main(void)
 
     return 0;
 }
-

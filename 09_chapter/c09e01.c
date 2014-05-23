@@ -1,3 +1,5 @@
+/* Array srting */
+
 #include <stdio.h>
 
 void enter_numbers(int t[], int num)

@@ -1,5 +1,6 @@
+/* Power recursion */
+
 #include <stdio.h>
-#include <math.h>
 
 long power_recursion(int x, int p)
 {
@@ -32,4 +33,3 @@ int main(void)
 
     return 0;
 }
-

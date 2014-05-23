@@ -1,6 +1,25 @@
+/* Random moves in 10x10 matrix */
+
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+
+void print_array(char walk[10][10])
+{
+    //show our table (dots)
+    for(int row = 0; row < 10; row++)
+    {
+        printf("\n");
+        for(int col = 0; col < 10; col++)
+            printf("%2c", walk[row][col]);
+    }
+    printf("\n\n");
+}
+
+int check_dot(char t[10][10],int x,int y)
+{
+    return (x>=0 && y>=0 && x<10 && y<10) && t[x][y]=='.';
+}
 
 void generate_random_walk(char walk[10][10])
 {
@@ -60,30 +79,12 @@ void generate_random_walk(char walk[10][10])
     }
 }
 
-void print_array(char walk[10][10])
-{
-    //show our table (dots)
-    for(int row = 0; row < 10; row++)
-    {
-        printf("\n");
-        for(int col = 0; col < 10; col++)
-            printf("%2c", walk[row][col]);
-    }
-    printf("\n\n");
-}
-
-int check_dot(char t[10][10],int x,int y)
-{
-    return (x>=0 && y>=0 && x<10 && y<10) && t[x][y]=='.';
-}
-
-int
-main(void)
+int main(void)
 {
     char tab[10][10];
     srand((unsigned int) time(NULL));
     generate_random_walk(tab);
     print_array(tab);
+    
     return 0;
 }
-

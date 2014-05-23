@@ -1,3 +1,5 @@
+/* Magic square */
+
 #include <stdio.h>
 
 void create_magic_square(int n, int magic_square[n][n])
@@ -95,4 +97,3 @@ int main(void)
 
     return 0;
 }
-

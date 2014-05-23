@@ -1,14 +1,19 @@
+/* Calculate formula */
+
 #include <stdio.h>
-#include <math.h>
+
+long power(int base, int exp)
+{
+	long result = 1;
+	while(exp-- > 0)
+		result *= base;
+
+	return result;
+}
 
 long calculation_of_polynomial(int x)
 {
-    long result=0;
-
-    result = 3*pow(x,5) + 2*pow(x,4) - 5*pow(x,3) - pow(x,2) + 7*x -6;
-
-    return result;
-
+    return 3*power(x,5) + 2*power(x,4) - 5*power(x,3) - power(x,2) + 7*x -6;
 }
 
 int main(void)
@@ -21,4 +26,3 @@ int main(void)
 
     return 0;
 }
-

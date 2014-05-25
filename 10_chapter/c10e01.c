@@ -1,50 +1,92 @@
+/* Checking brackets */
+
 #include <stdio.h>
+#include <stdbool.h>
 
-void enter_numbers(int t[], int num)
-{
-    printf("Enter %d numbers: ", num);
-    for(int i=0; i<num; i++)
-        scanf("%d", &t[i]);
-}
+#define SIZE 10
 
-void show_numbers(int t[], int num)
-{
-    for(int i=0; i<num; i++)
-        printf("%d ", t[i]);
-}
+char contents[SIZE];
+int top=0;
 
-void selection_sort(int t[], int num)
-{
-    int low=0, high=0, j=0;
-
-    high = t[0];
-    for(int i=0; i<num; i++)
-        if(high < t[i])
-            high = t[i];
-
-    for(j=0; j<num; j++)
-        if(t[j] == high)
-            break;
-
-    low = t[num-1];
-    t[num-1] = high;
-    t[j] = low;
-
-    if(num-1> 0)
-        selection_sort(t, num-1);
-}
+_Bool is_full(void);
+_Bool is_empty(void);
+int push(char c);
+int pop(void);
 
 int main(void)
 {
-    int n=0;
-    printf("How many numbers you want in array? ");
-    scanf("%d", &n);
-    int tab[n];
+    char bracket;
+    int how_many=0, good_bracket=0;
+    printf("Enter brackets: ");
+    while(bracket != '\n')
+    {
+        bracket = getchar();
+        
+        if((bracket == '(') || (bracket == '{'))
+        {
+            how_many++;
+            if(push(bracket)) //if overflow nd program
+                return 0;
+        }
+        else if((bracket == ')') || (bracket == '}'))
+        {
+            if(pop()) //if underflow end program
+                return 0;
+            
+            if(((contents[top] == '(') && (bracket == ')')) || ((contents[top] == '{') && (bracket == '}')))
+            {
+                good_bracket++;
+            }
+            else //bad bracket
+            {
+                puts("Bad bracket! Exiting!");
+                break;
+            }
+        }
+    }
 
-    enter_numbers(tab, n);
-    selection_sort(tab, n);
-    show_numbers(tab, n);
-
+    if((top == 0) && (how_many == good_bracket)) //chech if everything if fine
+        puts("Everything OK!");
+    else // eg. (()
+        puts("Bad bracket! Exiting!");
+    
     return 0;
 }
 
+_Bool is_full(void)
+{
+    return top == SIZE ? true : false;
+}
+
+_Bool is_empty(void)
+{
+    return top == 0 ? true : false;
+}
+
+int push(char c)
+{
+    if(is_full())
+    {
+        printf("Stack overflow\n");
+        return 1;
+    }
+    else
+    {
+        contents[top++] = c;
+        return 0;
+    }
+}
+
+int pop(void)
+{
+    if(is_empty())
+    {
+        printf("Stack underflow\n");
+        return 1;
+    }
+    else
+    {
+        --top;
+        return 0;
+    }
+}
